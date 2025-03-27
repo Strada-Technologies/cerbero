@@ -91,6 +91,10 @@ class Recipe(custom.GStreamer):
             'srt', 'zbar', 'libltc', 'qrencode', 'json-glib']
     use_system_libs = True
 
+    patches = [
+        'gst-plugins-bad-1.0/vtenc_h264.patch',
+    ]
+
     files_lang = ['gst-plugins-bad-1.0']
 
     files_libs = [
